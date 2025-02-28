@@ -1,5 +1,5 @@
-from Factory.product import Car, Moto
-from Factory.creator import VehicleFactory
+from product import Car, Moto
+from creator import VehicleFactory
 
 #Manipulador de factories
 

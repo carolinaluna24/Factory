@@ -1,8 +1,9 @@
 from abc import ABC, abstractmethod
 
-import Factory.product as product
+# Clase abstracta Factory
+import product as product
 
 class VehicleFactory(ABC):
     @abstractmethod
-    def create(self, vehicle_type):
+    def create_vehicle(self, vehicle_type):
         pass
