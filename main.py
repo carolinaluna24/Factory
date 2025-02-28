@@ -1,6 +1,6 @@
-# archivo para cosumir todo
+# archivo para cosumir todo, se consumen las fábricas y se envia los datos a las clases
 
-from concret_factory import CarFactory, MotoFactory
+from concret_factory import CarFactory, MotoFactory, TruckFactory
 #traemos la clase que creamos Car y Moto
 
 from client_test import client_vehicle
@@ -13,9 +13,11 @@ if __name__ == "__main__":
   #creamos un objeto de la clase , una fábrica
   car_factory = CarFactory()
   moto_factory = MotoFactory()
+  truck_factory = TruckFactory()
 
   #pasamos los parametros necesarios
   #usamos las fábricas a través de la función client
-  client_vehicle(car_factory, "Ferrari")
-  client_vehicle(moto_factory, "Honda")
+  client_vehicle(car_factory, "Ferrari", "Rojo", "2020")
+  client_vehicle(moto_factory, "Honda", "Azul", "2025")
+  client_vehicle(truck_factory, "Fotón", "Blanco", "2022")
   
